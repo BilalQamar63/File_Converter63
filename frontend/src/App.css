@@ -4,6 +4,25 @@ body{
     background: #f0f2f5;
 }
 
+/*=========== LOADER  ==============*/
+
+.loader {
+    display: flex;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+
+/*=========== LOADER  ==============*/
+
+
 
  /*=========== HOME PAGE ==============*/
 .home-container{
@@ -219,3 +238,66 @@ body{
 
 
 /*========= CSV AND JSON PAGE =========*/
+
+
+
+/*========= IMG OPTIMIZER PAGE =========*/
+
+.image-optimizer-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.drop-area {
+  border: 2px dashed #888;
+  padding: 40px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-area:hover {
+  background-color: #f9f9f9;
+}
+
+.preview-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.image-box {
+  flex: 1;
+  min-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.preview-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+/*========= IMG OPTIMIZER PAGE =========*/
+
+

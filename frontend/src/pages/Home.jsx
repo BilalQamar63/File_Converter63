@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../App.css';
-import { FaSearch, FaFileCsv, FaCode, FaArrowRight } from "react-icons/fa";
+import { FaSearch, FaFileCsv, FaCode, FaArrowRight , FaImage } from "react-icons/fa";
 import { useState } from 'react';
 
 const Home = () => {
@@ -19,7 +19,17 @@ const Home = () => {
             path: '/jsonToCsv',
             label: 'Convert JSON to CSV',
             icon: <FaCode className='conversion-icon' />
-        }
+        },
+        {
+            path: '/imgOptimizer',
+            label: 'Image Size Compression',
+            icon: <FaImage className='conversion-icon' />
+        },
+        {
+            path: '/imgBgRemover',
+            label: 'Image Background Remover',
+            icon: <FaImage className='conversion-icon' />
+        },
     ]
 
     const filteredConversions = conversions.filter(item => item.label.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
